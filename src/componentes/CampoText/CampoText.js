@@ -1,15 +1,17 @@
+import './CampoText.css'
+
 export const CampoTexto = () => {
     
     return (
-        <div>
+        <div className="campo-texto">
             <label>Nome</label>
-            <input />
+            <input placeholder='Digite seu nome'/>
 
             <label>Cargo</label>
-            <input />
+            <input placeholder='Digite seu cargo'/>
 
             <label>Imagem</label>
-            <input />
+            <input placeholder='Informe o endereço da imagem'/>
 
             <label>Time</label>
             <input />
