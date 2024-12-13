@@ -1,11 +1,11 @@
 import './ListaSuspensa.css'
 
-export const ListaSuspensa = ({label, itens}) => {
+export const ListaSuspensa = ({label, itens, required}) => {
 
     return (
         <div className='lista-suspensa'>
             <label>{label}</label>
-            <select>
+            <select required={required}>
                 {itens.map(item => (<option key={item}>{item}</option>))}
             </select>
         </div>
