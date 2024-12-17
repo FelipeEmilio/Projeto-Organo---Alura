@@ -1,10 +1,12 @@
 import './Time.css'
 
-export const Time = ({nome}) => {
+export const Time = ({nome, corPrimaria ,corSecundaria}) => {
 
+    const css1 = { backgroundColor: corSecundaria }
+    const css2 = { borderColor: corPrimaria }
     return (
-        <section className='time'>
-            <h3>{nome}</h3>
+        <section className='time' style={css1}>
+            <h3 style={css2}>{nome}</h3>
         </section>
     )
 

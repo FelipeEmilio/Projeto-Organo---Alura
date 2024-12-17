@@ -12,11 +12,14 @@ export const Formulario = (props) => {
     const [time, setTime] = useState('')
 
     const Times = [
+        'Programação',
         'Front-end',
-        'Back-end',
-        'Data Base',
-        'Redes',
-        'Devops'
+        'Data Science',
+        'Devops',
+        'UX e Design',
+        'Mobile',
+        'Inovação e Gestão'
+        
     ]
 
     const aoSalvar = (evento) => {
