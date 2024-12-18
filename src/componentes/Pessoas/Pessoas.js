@@ -1,18 +1,18 @@
 import './Pessoas.css'
 
-export const Pessoas = () => {
+export const Pessoas = ({imagem, nome, cargo}) => {
     
     return(
         <div className='pessoas'>
             <div className='cabecalho'>
-                <img src='https://github.com/felipeemilio.png' alt='Felipe Emilio' />
+                <img src={imagem} alt={nome} />
             </div>
 
             <div className='rodape'>
-                <h4>Felipe Emilio</h4>
-                <h5>DevOps</h5>
+                <h4>{nome}</h4>
+                <h5>{cargo}</h5>
             </div>
         </div>
     )
-
+  
 }
