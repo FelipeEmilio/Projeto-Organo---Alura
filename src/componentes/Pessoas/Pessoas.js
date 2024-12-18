@@ -1,10 +1,10 @@
 import './Pessoas.css'
 
-export const Pessoas = ({imagem, nome, cargo}) => {
+export const Pessoas = ({imagem, nome, cargo, corDeFundo}) => {
     
     return(
         <div className='pessoas'>
-            <div className='cabecalho'>
+            <div className='cabecalho' style={{ backgroundColor: corDeFundo }}>
                 <img src={imagem} alt={nome} />
             </div>
 

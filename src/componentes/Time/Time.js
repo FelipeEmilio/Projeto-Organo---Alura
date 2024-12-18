@@ -9,7 +9,7 @@ export const Time = ({nome, corPrimaria ,corSecundaria, colaboradores}) => {
        (colaboradores.length > 0) ? <section className='time' style={css1}>
             <h3 style={css2}>{nome}</h3>
             <div className='p'>
-                {colaboradores.map( pessoa => <Pessoas nome={pessoa.nome} cargo={pessoa.cargo} imagem={pessoa.imagem}/> )}
+                {colaboradores.map( pessoa => <Pessoas corDeFundo={corPrimaria} key={pessoa.nome} nome={pessoa.nome} cargo={pessoa.cargo} imagem={pessoa.imagem}/> )}
             </div>
         </section>
         : ''
